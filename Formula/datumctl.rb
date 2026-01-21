@@ -5,21 +5,21 @@
 class Datumctl < Formula
   desc "A network cloud, built on open source."
   homepage "https://www.datum.net/"
-  version "0.8.1"
+  version "0.9.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.8.1/datumctl_Darwin_x86_64.tar.gz"
-      sha256 "e789b1f1f5b2fcc3800d63709e85b6b2946ccc3e4ec3262732b6e40874ba3df7"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.9.0/datumctl_Darwin_x86_64.tar.gz"
+      sha256 "01c0479764b7de4e1556f92859b3b98ce3c7799604db448ddf50c233c69c40a1"
 
       def install
         bin.install "datumctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.8.1/datumctl_Darwin_arm64.tar.gz"
-      sha256 "7a77b6f897251dec1651a97d58735cb520fb555deba547847bb31d2ce41eda35"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.9.0/datumctl_Darwin_arm64.tar.gz"
+      sha256 "b0e6530303a9c482c316699af104ca991f7854b4e1cfc39d5862330fd6b38190"
 
       def install
         bin.install "datumctl"
@@ -29,15 +29,15 @@ class Datumctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.8.1/datumctl_Linux_x86_64.tar.gz"
-      sha256 "52083f7639f5dd311f6f1b9dfaf7e8c8db79a72d2dd7044626daeb30d6cb7c12"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.9.0/datumctl_Linux_x86_64.tar.gz"
+      sha256 "d1afd35b65536668eb1e415cd001df6f4c15bc60862bf759416856bf034dfba1"
       def install
         bin.install "datumctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.8.1/datumctl_Linux_arm64.tar.gz"
-      sha256 "ba5fc8e02dac239238fa30c7d53702d83c44da6ee6f759acc460b4d5e43cc0f2"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.9.0/datumctl_Linux_arm64.tar.gz"
+      sha256 "82022071cea6eae4de96168d3249c531b67ffa5462182da88ba3ea7bcbf78e54"
       def install
         bin.install "datumctl"
       end
