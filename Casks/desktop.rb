@@ -1,8 +1,8 @@
 cask "desktop" do
-  version "0.0.38"
-  sha256 "cbd59d1d5b727d15e9408b3bacfddc6adbede53dfb0a7cba890720711d7fa027"
+  version "0.0.39"
+  sha256 "c46bf928ab96c3c6acc7e8530c428417fbdaf8076077d4f99f51521651fdbad8"
 
-  url "https://github.com/datum-cloud/app/releases/download/v0.0.38/Datum.dmg"
+  url "https://github.com/datum-cloud/app/releases/download/v0.0.39/Datum.dmg"
   name "Datum"
   desc "Quickly and safely expose local environments to the internet, for free."
   homepage "https://www.datum.net/"
