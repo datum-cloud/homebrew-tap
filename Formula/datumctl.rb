@@ -5,21 +5,21 @@
 class Datumctl < Formula
   desc "A network cloud, built on open source."
   homepage "https://www.datum.net/"
-  version "0.15.0"
-  license "Apache 2.0"
+  version "0.15.1"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.0/datumctl_Darwin_x86_64.tar.gz"
-      sha256 "3316d2353ddef1a5c28164a3b31085a4c3cb814f144e6880521b272d3cc3e299"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.1/datumctl_Darwin_x86_64.tar.gz"
+      sha256 "1a1dce176eaeb6e7294fec7bead8d3419fa5f4110a461711d69bbd7860fa9bc5"
 
       define_method(:install) do
         bin.install "datumctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.0/datumctl_Darwin_arm64.tar.gz"
-      sha256 "b3e02dda30637ecfee24462045a3e789b0190783a06f8ceac4e480c4653caed5"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.1/datumctl_Darwin_arm64.tar.gz"
+      sha256 "5be8c931453c81fe791130d1a884f23382602d28224540801b59dee5a8bf151e"
 
       define_method(:install) do
         bin.install "datumctl"
@@ -29,15 +29,15 @@ class Datumctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.0/datumctl_Linux_x86_64.tar.gz"
-      sha256 "de8be9c0dd16b64aa2ef7ec9c4ea2867429789383564774533a165ea0c824832"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.1/datumctl_Linux_x86_64.tar.gz"
+      sha256 "9a8191992e83615dd9e31f9654044b837a5ec8ea77d8acf332ea588801d8b813"
       define_method(:install) do
         bin.install "datumctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.0/datumctl_Linux_arm64.tar.gz"
-      sha256 "a445bfb50e65f49bcb03f64a9b6a4d2e0101742a39d435cd7eb654ca42a22616"
+      url "https://github.com/datum-cloud/datumctl/releases/download/v0.15.1/datumctl_Linux_arm64.tar.gz"
+      sha256 "db6a0aa50f309f235f8dd355ee47d79e0f92d25d6a75ed17928979972cc22e27"
       define_method(:install) do
         bin.install "datumctl"
       end
