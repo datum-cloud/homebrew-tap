@@ -1,6 +1,6 @@
 cask "desktop" do
-  version "0.1.6"
-  sha256 "f1ec32240524ea1cf9a23824bc19cbfb7af71032ffeebb78884d5955dfb1e222"
+  version "0.1.8"
+  sha256 "584c1d380cde57f79bfca726b4d23f9d452c986cd96d89a3b0caa59f476ad56d"
 
   url "https://github.com/datum-cloud/app/releases/download/v#{version}/Datum.dmg"
   name "Datum"
