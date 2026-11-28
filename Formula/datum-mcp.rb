@@ -5,20 +5,20 @@
 class DatumMcp < Formula
   desc "MCP server for Datum Cloud - gives AI agents tools to manage your network infrastructure."
   homepage "https://www.datum.net/"
-  version "0.3.4"
+  version "0.3.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.4/datum-mcp_darwin_amd64"
-      sha256 "6488289f80ce681f252577a75965253c4c805f6666294e670aae39fbed64dd3b"
+      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.5/datum-mcp_darwin_amd64"
+      sha256 "7773f7677bfa263803f190da51ab9b45df7053a8a63a76555cea24d81a026768"
 
       define_method(:install) do
         bin.install "datum-mcp_darwin_amd64" => "datum-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.4/datum-mcp_darwin_arm64"
-      sha256 "6a3f2cf854600f1363a2cb214b5fa92c04eab58177a749ea1e7b4af8525db9e5"
+      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.5/datum-mcp_darwin_arm64"
+      sha256 "05e6d0bb1e069c580cba40546bf839be092943d473999fbdb270017e0ae82a99"
 
       define_method(:install) do
         bin.install "datum-mcp_darwin_arm64" => "datum-mcp"
@@ -28,15 +28,15 @@ class DatumMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.4/datum-mcp_linux_amd64"
-      sha256 "e8c96032d80c102f4a1343fe32d1823389da448462d79688c750ec560be63a87"
+      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.5/datum-mcp_linux_amd64"
+      sha256 "09bc3782cecb2989ae864d6cffb681e1a81ccb3ca7c06b55282af1cf712c000d"
       define_method(:install) do
         bin.install "datum-mcp_linux_amd64" => "datum-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.4/datum-mcp_linux_arm64"
-      sha256 "d3423ca936683681a13f1f5755b14403a64464155cd6d3eedcef0c053401728b"
+      url "https://github.com/datum-cloud/datum-mcp/releases/download/v0.3.5/datum-mcp_linux_arm64"
+      sha256 "b436ed69d5fb32126d126bd26c946c98f207570db4485f5b17035600c01f13d9"
       define_method(:install) do
         bin.install "datum-mcp_linux_arm64" => "datum-mcp"
       end
